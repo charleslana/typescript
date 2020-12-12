@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdff7620-3254-4dce-b33a-87a007c1fad1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/typescript.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/seeds/create_items.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/bateria.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/eletronico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/oleo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/organico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/papel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/uploads/vidro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knexfile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/knexfile.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
