@@ -1,8 +1,15 @@
 import express from 'express';
+import cors from 'cors';
 import path from "path";
 import routes from './routes';
 
 const app = express();
+
+app.use(cors());
+
+// app.use(cors({
+//     origin: ['charleslana.com.br']
+// }));
 
 app.use(express.json());
 
