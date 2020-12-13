@@ -5,7 +5,7 @@ const itemsRouter = Router();
 
 itemsRouter.get('/', async (request, response) => {
     const items = await knex('items').select('*');
-    const serializedItems = items.map(item => {
+    const serializedItems: Object = items.map(item => {
         return {
             id: item.id,
             title: item.title,
