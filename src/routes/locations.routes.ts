@@ -1,5 +1,6 @@
 import {Router} from 'express';
 import multer from "multer";
+import {celebrate, Joi} from "celebrate";
 import knex from "../database/connection";
 import multerConfig from '../config/multer';
 
@@ -48,7 +49,27 @@ locationsRouter.get('/:id', async (request, response) => {
     return response.json({ location, items });
 });
 
-locationsRouter.post('/', async (request, response) => {
+locationsRouter.post('/', celebrate({
+    body: Joi.object().keys({
+        name: Joi.string().required(),
+        email: Joi.string().required().email().label('e-mail'),
+        whatsapp: Joi.string().required(),
+        latitude: Joi.number().required(),
+        longitude: Joi.number().required(),
+        city: Joi.string().required(),
+        uf: Joi.string().required().max(2).min(2).messages({
+            'string.base': `"uf" should be a type of 'text'`,
+            'string.empty': `"uf" cannot be an empty field`,
+            'string.min': `"uf" should have a minimum length of {#limit}`,
+            'string.max': `"uf" should have a maximum length of {#limit}`,
+            'any.required': `"uf" is a required field`
+        }),
+        items: Joi.array().items(Joi.number()).required(),
+        image: Joi.string().required(),
+    })
+}, {
+    abortEarly: false
+}), async (request, response) => {
     const {
         name,
         email,
