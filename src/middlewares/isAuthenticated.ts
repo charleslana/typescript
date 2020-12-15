@@ -20,9 +20,8 @@ export default function isAuthenticated(
     try {
         const decodedToken = verify(token, authConfig.jwt.secret);
 
-        console.log(decodedToken);
-
         return next();
+
     } catch (error) {
         return response.status(401).json({ message: 'Invalid JWT Token.' });
     }
